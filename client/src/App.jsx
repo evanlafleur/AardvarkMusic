@@ -11,8 +11,9 @@ function App() {
     <div className="min-h-screen bg-[#FFFCF2] text-[#252422]">
       <Navbar />
       <Routes>
-              <Link to="/">Home (test link)</Link>
-
+        <Route path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
